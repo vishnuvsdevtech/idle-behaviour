@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Idle — the page notices when you stop</title>
+<meta name="description" content="Eight seconds of stillness and the room changes: the lamp dims, dust thickens, something small wakes up.">
+<meta name="theme-color" content="#0a0806">
+<link rel="canonical" href="https://vishnuvsdevtech.github.io/idle-behaviour/">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+:root{--acc:#ffc46b}
+body{background:#0a0806;background-image:radial-gradient(90% 70% at 50% 0%,#1a1309 0%,#0a0806 66%)}
+.stage{border-color:rgba(255,196,107,.18)}
+</style></head>
+<body><div class="wrap">
+<header><h1>The page notices when you <em>stop</em></h1><span class="tag">idle state · one small event</span></header>
+<div class="stage"><canvas id="c" width="1000" height="440"></canvas></div>
+<div class="meter"><span>idle <b id="m-i">0.0s</b></span><span>state <b id="m-s">awake</b></span>
+  <span>lamp <b id="m-l">100%</b></span><span>hint <b>stop moving for eight seconds</b></span></div>
+<div class="notes"><p>Idleness is the one input every interface ignores. After eight seconds of stillness the lamp dims, dust catches what is left of the light, and a moth arrives — then it loops, slowly, and the scene has a life of its own.</p>
+<p>Any pointer movement resets it instantly and the lamp comes back. The rule is that idle behaviour must never cost the user anything: it is decoration on a timer, not a task.</p></div>
+<footer><span>Idle · POC</span><span>timer + three states</span></footer>
+</div>
+<script src="assets/app.js"></script></body></html>
